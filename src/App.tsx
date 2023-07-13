@@ -6,6 +6,8 @@ import PersonList from './components/PersonList'
 import Status from './components/Status'
 import Heading from './components/Heading'
 import Oscar from './components/Oscar'
+import Button from './components/Button'
+import Input from './components/Input'
 
 
 
@@ -40,8 +42,9 @@ function App() {
       <Heading>Placeholder text</Heading>
       <Oscar>
       <Heading>Oscar goes to Leonardo Dicaprio!!</Heading>
-
+      <Button handleClick={(event, id) => console.log('Button clicked', event, id)}/>
       </Oscar>
+      <Input value="" handleChange={(event) => console.log(event)}/>
      
     </div>
   )
