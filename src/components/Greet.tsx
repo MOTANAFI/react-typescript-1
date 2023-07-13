@@ -2,7 +2,7 @@
 
 type GreetProps = {
   name: string
-  messageCount: number
+  messageCount?: number
   isLoggedIn : boolean
 }
 function Greet({name, messageCount, isLoggedIn}: GreetProps) {
