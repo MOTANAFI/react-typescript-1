@@ -10,6 +10,8 @@ import Button from './components/Button'
 import Input from './components/Input'
 import Container from './components/Container'
 import Counter from './components/state/Counter'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import Box from './components/context/Box'
 
 
 
@@ -35,6 +37,8 @@ function App() {
   ]
 
   return (
+    <ThemeContextProvider>
+
     <div>
       <h1>hellow typescript</h1>
       <Greet name='mohamed' messageCount={30} isLoggedIn={true}/>
@@ -49,8 +53,10 @@ function App() {
       <Input value="" handleChange={(event) => console.log(event)}/>
       <Container styles={{border: '1px solid black', padding: '1rem'}}/>
       <Counter />
+      <Box />
      
     </div>
+    </ThemeContextProvider>
   )
 }
 
