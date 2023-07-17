@@ -12,6 +12,7 @@ import Container from './components/Container'
 import Counter from './components/state/Counter'
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import Box from './components/context/Box'
+import User from './components/context/User'
 
 
 
@@ -54,6 +55,7 @@ function App() {
       <Container styles={{border: '1px solid black', padding: '1rem'}}/>
       <Counter />
       <Box />
+      <User />
      
     </div>
     </ThemeContextProvider>
