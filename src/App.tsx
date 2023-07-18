@@ -13,6 +13,7 @@ import Counter from './components/state/Counter'
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import Box from './components/context/Box'
 import User from './components/context/User'
+import  {ClassCounter} from "./components/class/Counter";
 
 
 
@@ -56,6 +57,7 @@ function App() {
       <Counter />
       <Box />
       <User />
+      <ClassCounter message='come home now!!'/>
      
     </div>
     </ThemeContextProvider>
