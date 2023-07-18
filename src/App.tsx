@@ -14,6 +14,8 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import Box from './components/context/Box'
 import User from './components/context/User'
 import  {ClassCounter} from "./components/class/Counter";
+import { Private } from './components/auth/Private'
+import Profile from './components/auth/Profile'
 
 
 
@@ -58,6 +60,7 @@ function App() {
       <Box />
       <User />
       <ClassCounter message='come home now!!'/>
+      <Private isLoggedIn={true} component={Profile}/>
      
     </div>
     </ThemeContextProvider>
