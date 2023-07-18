@@ -16,6 +16,7 @@ import User from './components/context/User'
 import  {ClassCounter} from "./components/class/Counter";
 import { Private } from './components/auth/Private'
 import Profile from './components/auth/Profile'
+import {List} from "./components/generics/List"
 
 
 
@@ -61,6 +62,39 @@ function App() {
       <User />
       <ClassCounter message='come home now!!'/>
       <Private isLoggedIn={true} component={Profile}/>
+      {/* <List 
+      items={['FastX', 'John Wick', 'Ip Man']}
+      onClick={(item) => console.log(item)}
+      />
+      <List 
+      items={[1,2,3,4,5]}
+      onClick={(item) => console.log(item)}
+      /> */}
+      <List 
+      items={[
+        {
+          id: 1,
+          first: 'Beka',
+          last: 'Lakeer'
+        },
+        {
+          id: 2,
+          first: 'John',
+          last: 'Mewa'
+        },
+        {
+          id: 3,
+          first: 'Mickael',
+          last: 'Mee'
+        },
+        {
+          id: 4,
+          first: 'Lone',
+          last: 'Wolf'
+        },
+      ]}
+      onClick={(item) => console.log(item)}
+      />
      
     </div>
     </ThemeContextProvider>
