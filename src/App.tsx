@@ -1,5 +1,5 @@
 
-import Greet from './components/Greet'
+import {Greet} from './components/Greet'
 import './App.css'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
@@ -20,6 +20,7 @@ import {List} from "./components/generics/List"
 import { RandomNumber } from './components/restriction/RandomNumber'
 import { Toast } from './components/templateLiterals/Toast'
 import { CustomButton } from './components/html/Button'
+import { Text } from './components/polymorphic/Text'
 
 
 
@@ -103,6 +104,9 @@ function App() {
       <CustomButton variant='primary' onClick={() => console.log('clicked')}>
         Primary Button
         </CustomButton>
+        <Text as='h1' size='lg'>Heading</Text>
+        <Text as='p' size='md'>Paragraph</Text>
+        <Text as='label' htmlFor='someId' size='sm' color='secondary'>Label</Text>
      
     </div>
     </ThemeContextProvider>
