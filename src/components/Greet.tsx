@@ -5,7 +5,7 @@ type GreetProps = {
   messageCount?: number
   isLoggedIn : boolean
 }
-function Greet({name, messageCount, isLoggedIn}: GreetProps) {
+export function Greet({name, messageCount, isLoggedIn}: GreetProps) {
   return (
     <div>
       {isLoggedIn ? 
@@ -16,5 +16,3 @@ function Greet({name, messageCount, isLoggedIn}: GreetProps) {
     </div>
   )
 }
-
-export default Greet
